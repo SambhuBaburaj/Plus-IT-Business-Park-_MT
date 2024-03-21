@@ -9,8 +9,6 @@ export const store = configureStore({
     getDefaultMiddleware({
       serializableCheck: {
         ignoredActions: ["yourNonSerializableAction"],
-        // Or ignore certain paths:
-        // ignoredPaths: ['some.path.to.ignore']
       },
     }),
 });
